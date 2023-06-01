@@ -41,8 +41,8 @@ def simu_single(state, times):
 
 
 def simulate(init_states, times):
-     res = [0] * len(allcdf)
-     for i in range(len(allcdf)):
+     res = [0] * len(init_states)
+     for i in range(len(init_states)):
           res[i] = simu_single(init_states.iloc[[i], ], times)
      return(res)
 
