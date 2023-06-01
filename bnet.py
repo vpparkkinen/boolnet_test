@@ -40,11 +40,11 @@ def simu_single(state, times):
 # simu_single(allcdf.iloc[[30],], 1)
 
 
-# def simulate(init_states, times):
-#     res = [0] * len(allcdf)
-#     for i in range(len(allcdf)):
-#         res[i] = simu_single(init_states.iloc[[i], ], times)
-#     return(res)
+def simulate(init_states, times):
+     res = [0] * len(allcdf)
+     for i in range(len(allcdf)):
+          res[i] = simu_single(init_states.iloc[[i], ], times)
+     return(res)
 
 
 
